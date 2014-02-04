@@ -23,7 +23,7 @@
 	
 }
 
-@headertextshadow: 0 1px 0 rgba(255,255,255,.75), 0 -1px 0 rgba(0,0,0,.15);
+@headertextshadow: /*0 1px 0 rgba(255,255,255,.75), 0 -1px 0 rgba(0,0,0,.15)*/;
 
 
 /* COLORS 
@@ -56,16 +56,16 @@ a, a:visited { color: @orange; transition: .2s; -webkit-transition: .2s; }
 a:hover, a:active { color: @almostblack; }
 
 h1 {
-	background: #000 url(../images/layout/header.jpg) right top no-repeat;
+	background: #000 url(../images/layout/logo.png) 35px 30px no-repeat;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	color: @orange;
 	font-family: HelveticaNeueCondensedBold;
 	font-size: 70px;
-	height: 300px;
+	height: 200px;
 	line-height: 70px;
 	margin: 0 0 15px 0;
-	padding: 90px 0 0 20px;
+	padding: 40px 0 0 180px;
 	text-transform: uppercase;
 	text-shadow: none;
 }
@@ -129,6 +129,13 @@ strong { font-weight: bold; }
 .app-t2 { font-family: Verdana; font-size: 9px; }
 .app-t3 { font-family: FrucadeSmall; font-size: 8px; }
 .app-buttons { font-family: HelveticaNeueBold; font-size: 11px; }
+
+
+.bar {
+ background: @orange;
+ height: 20px;
+}
+
 
 .caption {
 	font-style: oblique;
@@ -198,6 +205,10 @@ strong { font-weight: bold; }
 
 .icon { height: 20px; margin-right: 10px; }
 
+.intro {
+	font-size: @h3size - 10;
+	line-height: @h3size;
+}
 
 .swatch {
 	text-align: center;
